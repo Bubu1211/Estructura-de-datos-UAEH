@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1611186805 source:c:\users\asus\documents\cpp-code\arreglos_act_1_4\arreglos.cpp
+	<iostream>
+	<conio.h>
+
