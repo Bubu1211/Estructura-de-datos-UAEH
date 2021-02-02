@@ -3,7 +3,6 @@
 
 ///prototipos de función
 double operacion(int,int,char);
-double operacion(double,double,char);
 
 int main()
 {
