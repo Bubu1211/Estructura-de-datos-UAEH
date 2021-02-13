@@ -1,9 +1,17 @@
 #include <iostream>
 
-using namespace std;
+struct Direccion{
+    std::string calle
+    int numero;
+    std::string colonia;
+};
+
+struct Persona{
+    std::string nombre;
+    Direccion direccion;
+};
 
 int main()
 {
-    cout << "Hello world!" << endl;
     return 0;
 }
