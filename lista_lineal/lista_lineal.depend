@@ -1,4 +1,11 @@
 # depslib dependency file v1.0
-1614637708 source:c:\users\asus\documents\cpp-code\lista_lineal\lista_lineal.cpp
+1614640739 source:c:\users\asus\documents\cpp-code\lista_lineal\lista_lineal.cpp
 	<iostream>
+	"Lista.h"
+
+1614640471 source:c:\users\asus\documents\cpp-code\lista_lineal\lista.cpp
+	"Lista.h"
+	<iostream>
+
+1614638880 c:\users\asus\documents\cpp-code\lista_lineal\lista.h
 

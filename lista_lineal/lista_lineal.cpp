@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Lista.h"
 
 char mostrarMenu();
 void mostrarTitulo(std::string);
@@ -8,6 +9,8 @@ int main()
     setlocale(LC_CTYPE, "Spanish");
     char seguir;
 
+    Lista x(4);
+
     do{
 
         seguir = mostrarMenu();
@@ -16,10 +19,12 @@ int main()
 
             case 'A': case 'a':
                 mostrarTitulo("Añadir elemento");
+                x.agregar_elemento();
                 break;
 
             case 'B': case 'b':
                 mostrarTitulo("Mostrar lista");
+                x.mostrar_lista();
                 break;
 
             case 'C': case 'c':
@@ -58,6 +63,6 @@ char mostrarMenu()
 
 void mostrarTitulo(std::string titulo)
 {
-    system("cls");
+    ///system("cls");
     std::cout<<titulo<<"\n";
 }

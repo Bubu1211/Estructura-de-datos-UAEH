@@ -1,4 +1,5 @@
 #include "Lista.h"
+#include <iostream>
 
 Lista::Lista(int tamanio)
 {
@@ -12,10 +13,10 @@ void Lista::agregar_elemento()
     if(n < MAX)
     {
         std::cout<<"Introduce el nuevo elemento: ";
-        cin>> a[n++];
-        std::cout<<"Elemento añadido exitosamente: ";
+        std::cin>> a[n++];
+        std::cout<<"Elemento añadido exitosamente \n";
     }else
-        cout<< "Lista llena...";
+        std::cout<< "Lista llena...";
 }
 
 void Lista::mostrar_lista()
