@@ -30,3 +30,18 @@ void Lista::mostrar_lista()
             std::cout<<a[i]<<"\n";
     }
 }
+
+///ordenar por método de la burbuja
+void Lista::ordenar()
+{
+    int aux;
+    for(int i = 0; i<n; i++){
+        for(int j = 0; j<n; j++){
+            if(a[j+1] < a[j]){
+                aux =  a[j];
+                a[j] = a[j+1];
+                a[j+1] = aux;
+            }
+        }
+    }
+}

@@ -8,6 +8,7 @@ class Lista
         Lista(int);
         void agregar_elemento();
         void mostrar_lista();
+        void ordenar();
 
     protected:
 
