@@ -29,6 +29,7 @@ int main()
 
             case 'C': case 'c':
                 mostrarTitulo("Ordenar lista");
+                x.ordenar();
                 break;
 
             case 'S': case 's':
