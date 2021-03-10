@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1615412836 source:c:\users\asus\documents\cpp-code\lista_personas\main.cpp
+	<iostream>
+	"persona.h"
+
+1615412942 source:c:\users\asus\documents\cpp-code\lista_personas\persona.cpp
+	"persona.h"
+
+1615412555 c:\users\asus\documents\cpp-code\lista_personas\persona.h
+	<iostream>
+
