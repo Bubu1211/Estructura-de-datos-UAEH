@@ -36,7 +36,7 @@ void Lista::ordenar()
 {
     std::cout<<n<<std::endl;
     int aux;
-    for(int i = 0; i<n-1; i++){
+    for(int i = 0; i<n-1; i++){ ///se elimina acceso a
         for(int j = 0; j<n-1-i; j++){  ///se reducen iteraciones
             if(a[j+1] < a[j]){
                 aux =  a[j];
