@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1615410791 source:c:\users\asus\documents\cpp-code\stl_lista\lista.cpp
+	<iostream>
+	<list>
+	<string>
+
