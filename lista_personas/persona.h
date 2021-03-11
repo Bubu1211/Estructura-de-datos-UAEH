@@ -10,6 +10,7 @@ class persona
         persona();
         void leer_datos();
         void imprimir_datos();
+        bool operator <(persona &p);
 
     protected:
 
