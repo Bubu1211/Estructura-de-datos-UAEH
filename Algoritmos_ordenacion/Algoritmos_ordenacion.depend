@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1615915085 source:c:\users\asus\documents\cpp-code\algoritmos_ordenacion\node.cpp
+	"node.h"
+
+1615915123 c:\users\asus\documents\cpp-code\algoritmos_ordenacion\node.h
+
+1615915037 source:c:\users\asus\documents\cpp-code\algoritmos_ordenacion\main.cpp
+	<iostream>
+
