@@ -21,6 +21,12 @@ template <class T> class Lista
         int getSize();
         bool isEmpty();
 
+        void bubble_sort();
+        void quick_sort();
+        void selection_sort();
+        void merge_sort();
+        void insertion_sort();
+
     private:
         int size;
         Node <T> *top;
@@ -153,6 +159,31 @@ template <class T> int Lista<T>::getSize()
 template <class T> bool Lista<T>::isEmpty()
 {
     return (top == NULL);
+}
+
+template <class T> void Lista<T>::bubble_sort()
+{
+
+}
+
+template <class T> void Lista<T>::quick_sort()
+{
+
+}
+
+template <class T> void Lista<T>::selection_sort()
+{
+
+}
+
+template<class T> void Lista<T>::merge_sort()
+{
+
+}
+
+template <class T> void Lista<T>::insertion_sort()
+{
+
 }
 
 #endif // LISTA_H
