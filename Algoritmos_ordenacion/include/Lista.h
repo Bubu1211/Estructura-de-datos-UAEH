@@ -190,17 +190,18 @@ template <class T> void Lista<T>::bubble_sort()
 template <class T> void Lista<T>::selection_sort()
 {
     int indiceMenor, i, j;
-    T menor = getNodeAt(1)->value;
+     T menor;
 
     for(j = 1; j<tam; j++){
+       menor = getNodeAt(j)->value;
         for(i=j;i<tam; i++){
-            if(getNodeAt(i)->value < menor){
-                menor = getNodeAt(i)->value;
+            if(getNextNode(i)->value < menor){
+                menor = getNextNode(i)->value;
                 indiceMenor = i+1;
+                getNodeAt(indiceMenor)-> value = getNodeAt(j)->value;
+                getNodeAt(j)->value = menor;
             }
         }
-        getNodeAt(indiceMenor)-> value = getNodeAt(j)->value;
-        getNodeAt(j)->value = menor;
     }
 }
 
