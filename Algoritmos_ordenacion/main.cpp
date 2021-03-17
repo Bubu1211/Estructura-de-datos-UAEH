@@ -41,26 +41,35 @@ int main()
 
             case 5:
                 titulo("5. Ordenar por Bubble Sort");
-
+                x.bubble_sort();
                 break;
             case 6:
                 break;
             case 7:
+                titulo("7. Ordenar por Selection Sort");
+                x.selection_sort();
                 break;
+
             case 8:
                 break;
             case 9:
                 break;
 
             case 10:
+                titulo("Tamaño lista: ");
+                std::cout<<x.tam;
+                break;
+
+            case 11:
                 titulo("Fin del programa");
+                return 0;
                 break;
 
             default:
                 titulo("No se reconoce una opción, intente de nuevo");
         }
         system("pause");
-    }while(opcion != 10);
+    }while(opcion != 11);
 
     return 0;
 }
@@ -78,7 +87,8 @@ int menu()
     std::cout<<"7. Ordenar por Selection Sort \n";
     std::cout<<"8. Ordenar porMerge Sort \n";
     std::cout<<"9. Ordenar por Insertion Sort \n";
-    std::cout<<"10. Salir \n";
+    std::cout<<"10. Ver tamaño \n";
+    std::cout<<"11. Salir \n";
     std::cin>>r;
     return r;
 }
