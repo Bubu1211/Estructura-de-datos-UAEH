@@ -1,8 +1,16 @@
 #include <iostream>
+#include "Lista.h"
 
-using namespace std;
+void bubbleSort(Lista<T> link)
+{
+
+}
 
 int main()
 {
+    Lista<int> x;
+
+
+
     return 0;
 }

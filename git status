@@ -1,0 +1,167 @@
+[33mcommit 15118b9be017cb7eb3fa3733eff7c8dcd2541467[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m
+Author: César Ricardo Lazcano Valdez <cesar.lazcano.1211@gmail.com>
+Date:   Tue Mar 16 11:25:20 2021 -0600
+
+    Práctica con algoritmos de ordenamiento sobre listas dinámicas, creación de la clase lista y clase Node
+
+[33mcommit d6357abd4bf8595d8c7132fb9e4d3cabd1976aab[m
+Author: César Ricardo Lazcano Valdez <cesar.lazcano.1211@gmail.com>
+Date:   Wed Mar 10 18:04:10 2021 -0600
+
+    Implementación de lista de persona y sobrecarga de operadores
+
+[33mcommit 0a35331f7a1eac0654c6b2c37a4209b27c91ade7[m
+Author: César Ricardo Lazcano Valdez <cesar.lazcano.1211@gmail.com>
+Date:   Wed Mar 10 15:53:52 2021 -0600
+
+    Implementación de la clase persona
+
+[33mcommit 1c36374cc7c6dedacb69fb29781c95aeebdaf35d[m
+Author: César Ricardo Lazcano Valdez <cesar.lazcano.1211@gmail.com>
+Date:   Wed Mar 10 15:53:29 2021 -0600
+
+    Inicia proyecto lista_personas
+
+[33mcommit d56bfc4b9c1ab52f9b0f919b88e8ee555cc7354d[m
+Author: César Ricardo Lazcano Valdez <cesar.lazcano.1211@gmail.com>
+Date:   Wed Mar 10 15:23:29 2021 -0600
+
+    Uso de standard template library STL c++ clase list
+
+[33mcommit aff879924c928fbbcd1a48f9a8978b9dddf54067[m
+Author: César Ricardo Lazcano Valdez <cesar.lazcano.1211@gmail.com>
+Date:   Wed Mar 10 12:31:47 2021 -0600
+
+    Conjunto de ejercicios sobre funciones y arreglos
+
+[33mcommit 1609dd9514684647582bdd042e7cd631b8b4ce5a[m
+Author: César Ricardo Lazcano Valdez <cesar.lazcano.1211@gmail.com>
+Date:   Wed Mar 10 12:31:21 2021 -0600
+
+    Conjunto de ejercicios sobre structs
+
+[33mcommit af3a04692664b2c1a807089a96e7eafa59cc0f50[m
+Author: César Ricardo Lazcano Valdez <cesar.lazcano.1211@gmail.com>
+Date:   Wed Mar 10 12:27:56 2021 -0600
+
+    Termina Proyecto lista_lineal
+
+[33mcommit 225b631c994b6ab49f1151c78b3417fb64440c63[m
+Author: César Ricardo Lazcano Valdez <cesar.lazcano.1211@gmail.com>
+Date:   Wed Mar 10 12:13:36 2021 -0600
+
+    Modificación del método de la burbuja para ordenar arreglos
+
+[33mcommit a4e9af9bd0d7c8031dafe51448fb724dc2882f56[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Mon Mar 1 21:21:48 2021 -0600
+
+    Implementación de método de ordenamiento
+
+[33mcommit 671f4f783a48443afd22180b77fef0272f410180[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Mon Mar 1 21:21:03 2021 -0600
+
+    Definición del método de burbuja para ordenar la lista!
+
+[33mcommit 44e56b08efb62bcac9230d3de217fdf2ac353ea2[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Mon Mar 1 21:18:50 2021 -0600
+
+    Configuracions del proyecto
+
+[33mcommit 194d8cc56707cfddd6bc19d47016c9355c3cbba1[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Mon Mar 1 17:42:16 2021 -0600
+
+    Termina actividad 2, creación de una lista y función de agregar elementos y mostarlos en pantalla
+
+[33mcommit 6d951d19d86d537d41f02e77ed9546fdef879789[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Mon Mar 1 17:02:44 2021 -0600
+
+    Creación de ls clase Lista
+
+[33mcommit 118bf4be23a368325656b0de8fc656c29faa064d[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Mon Mar 1 16:37:14 2021 -0600
+
+    Termina menú cíclico, sin comentar hasta el siguiente ejercicio
+
+[33mcommit 7e334593c7ffa7b11dbdd78e48f64e2d95487b6e[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Mon Mar 1 16:36:41 2021 -0600
+
+    configuraciones finales del proyecti
+
+[33mcommit 06e65ee286e1181b9b96cba21f34b24f61a1194f[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Mon Mar 1 13:15:50 2021 -0600
+
+    Inician actividades segundo parcial, menú ciclico con funcionalidades sobre una lista
+
+[33mcommit 33b4795d922c2681df16d29a9212f6fedd0643f2[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Sat Feb 13 11:03:46 2021 -0600
+
+    Termina actividad 13, nota: mejora de los métodos y constructor
+
+[33mcommit 0bd09c8a0ed5bb843a01fcaf345dfc848bffcbf5[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Sat Feb 13 11:03:00 2021 -0600
+
+    Terminan configuraciones de la actividad 13
+
+[33mcommit 06bffff5bc73d7a8eb64ec8ece780f3b81dbf6cc[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Sat Feb 13 10:40:21 2021 -0600
+
+    Inicia introducción a las clases C++
+
+[33mcommit e0be212bfde72dc2dbf385475655c62e38738bca[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Sat Feb 13 10:28:16 2021 -0600
+
+    Termina actividad 12, posible incklusión de menu y más funciones al proyecto de práctica
+
+[33mcommit b21606d405b406b59d256d786f6b52a1cfbbed1e[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Sat Feb 13 10:27:32 2021 -0600
+
+    guardado de ultimas configuraciones del proyecto de la actividad 12
+
+[33mcommit f4ad43f10ebd2bedc2776e6496e2941a1a3df8e1[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Sat Feb 13 09:50:26 2021 -0600
+
+    Inicia codificación de la actividad 12
+
+[33mcommit 50fa39585d51bbb82c421e32bc2b04a15e5c32c5[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Sat Feb 13 09:08:58 2021 -0600
+
+    Termina ejerccio estructuras anidadas, nota: revisar uno de apuntadores en structs anidados
+
+[33mcommit 6d2f656379e37aca06ff50d4a08de749c8686b70[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Fri Feb 12 18:34:18 2021 -0600
+
+    Inicia solución de la actividad 11
+
+[33mcommit 105dd4cc2bf4cfc0e05a0260fb9511d85ce18b13[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Fri Feb 5 16:06:35 2021 -0600
+
+    termina actividad 10
+
+[33mcommit 0e1774eaa95f4a74ec7832124ad6eba646e405de[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Fri Feb 5 15:40:36 2021 -0600
+
+    Inicia solución de actividad de práctica 10, estructuras y arreglos
+
+[33mcommit e68cf7d2bcf7ebd2b32a369fbf9720d3de10e494[m
+Author: --replace <la384541@uaeh.edu.mx>
+Date:   Fri Feb 5 15:38:16 2021 -0600
+
+    Termina replica, inicia activida de práctica
