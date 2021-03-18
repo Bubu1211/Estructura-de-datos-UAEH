@@ -44,6 +44,8 @@ int main()
                 x.bubble_sort();
                 break;
             case 6:
+                titulo("6. Ordenar por quicksort");
+                x.quick_sort(x.getSize());
                 break;
             case 7:
                 titulo("7. Ordenar por Selection Sort");
@@ -53,6 +55,8 @@ int main()
             case 8:
                 break;
             case 9:
+                titulo("9. Ordenar por Insertion Sort");
+                x.insertion_sort();
                 break;
 
             case 10:

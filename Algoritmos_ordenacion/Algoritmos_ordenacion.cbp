@@ -36,8 +36,6 @@
 		</Compiler>
 		<Unit filename="include/Lista.h" />
 		<Unit filename="include/Node.h" />
-		<Unit filename="include/Sort.cpp" />
-		<Unit filename="include/Sort.h" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>
