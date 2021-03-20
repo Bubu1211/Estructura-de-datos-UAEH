@@ -22,7 +22,7 @@ template <class T> class Lista
         bool isEmpty();
 
         void bubble_sort();
-        void quick_sort(int);
+        void quick_sort(int, int);
         void selection_sort();
         void merge_sort();
         void insertion_sort();
@@ -224,19 +224,16 @@ template <class T> void Lista<T>::insertion_sort()
     std::cout<<"iteraciones: "<<iteraciones;
 }
 
-template <class T> void Lista<T>::quick_sort(int longitud)
+template <class T> void Lista<T>::quick_sort(int inicio, int fin)
 {
-    T pivote_value = getNodeAt(longitud/2)->value;
+    int indicePivote = (inicio+fin)/2;
+    T pivote= getNodeAt(indicePivote)->value;
 
-    int i, j=longitud;
-    for(i = 0; i<=longitud && j>=0; i++){
-        Node<T> *ptrA = getNodeAt(i), *ptrB = getNodeAt(j);
-        if(ptrA->value > pivote_value && ptrB->value<pivote_value){
-            ///intercambio entre ptrA y ptrB de valor
-            ///etapa algoritmo página 300
-            j--;
-        }
-    }
+    int i=inicio, j=fin;
+
+    ///ordeanmiento, recursividad y dowhile
+
+    std::cout<<"Termina quickSort...\n";
 }
 
 

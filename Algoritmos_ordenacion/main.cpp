@@ -45,7 +45,7 @@ int main()
                 break;
             case 6:
                 titulo("6. Ordenar por quicksort");
-                x.quick_sort(x.getSize());
+                x.quick_sort(1, x.getSize());
                 break;
             case 7:
                 titulo("7. Ordenar por Selection Sort");
