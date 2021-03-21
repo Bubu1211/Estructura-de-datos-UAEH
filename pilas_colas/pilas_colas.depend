@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1616366430 source:c:\users\asus\documents\cpp-code\pilas_colas\main.cpp
+	<iostream>
+	<Pila.h>
+	<Cola.h>
+
+1616362980 c:\users\asus\documents\cpp-code\pilas_colas\include\pila.h
+	<Node.h>
+
+1616360512 c:\users\asus\documents\cpp-code\pilas_colas\include\node.h
+
+1616366473 c:\users\asus\documents\cpp-code\pilas_colas\include\cola.h
+	<Pila.h>
+
