@@ -4,10 +4,62 @@
 
 int menu();
 void titulo(std::string);
+void inicio();
 void palindromo();
 void expresion();
 
 int main()
+{
+    setlocale(LC_CTYPE, "Spanish");
+
+    int opcion;
+
+    do{
+        switch(opcion = menu()){
+            case 1:
+                titulo("Inicio uso de Pilas y Colas");
+                inicio();
+                break;
+            case 2:
+                titulo("Palindromo");
+                palindromo();
+                break;
+            case 3:
+                titulo("Expresion");
+                expresion();
+            case 4:
+                titulo("Fin del programa");
+                return 0;
+            default:
+                titulo("No se reconoce la opción, intente de nuevo");
+        }
+        system("pause");
+    }while(opcion != 4);
+
+
+
+    return 0;
+}
+
+int menu()
+{
+    int op;
+    system("cls");
+    std::cout<<"1. Inicio act 7\n";
+    std::cout<<"2. Palíndromo act 8\n";
+    std::cout<<"3. Expresión act 9\n";
+    std::cout<<"4. Salir \n";
+    std::cin>>op;
+    return op;
+}
+
+void titulo(std::string msg)
+{
+    system("cls");
+    std::cout<<msg<<"\n";
+}
+
+void inicio()
 {
     Pila<double> x;
 
@@ -48,26 +100,33 @@ int main()
     }
 
     std::cout<<"Tamaño de la cola "<<y.getSize()<<"\n";
-
-    return 0;
-}
-
-int menu()
-{
-    int op;
-    std::cout<<"1. Palíndromo act 8\n";
-    std::cout<<"2. Expresión act 9\n";
-    std::cout<<"3. Salir \n";
-}
-
-void titulo(std::string msg)
-{
-    system("cls");
-    std::cout<<msg<<"\n";
 }
 
 void palindromo()
 {
+    std::string palabra;
+    bool es_palindromo = true;
+    Pila<char> pila;
+    Cola<char> cola;
+
+    fflush(stdin);
+    std::cout<<"Ingrese palabra a analizar: ";
+    getline(std::cin, palabra);
+
+    for(int i = 0; i<palabra.length(); i++)
+    {
+        if(isalpha(palabra[i])){
+            pila.push(tolower(palabra[i]));
+            cola.push(tolower(palabra[i]));
+        }
+    }
+    for(int i = 0; i<pila.getSize(); i++){
+        if(pila.pop() != cola.pop()){
+            es_palindromo = false;
+        }
+    }
+    if(es_palindromo) std::cout<<"La palabra es: "<<palabra<<"\nSi es palíndromo \n";
+    else std::cout<<"La palabra es: "<<palabra<<"\nNo es palíndromo \n";
 
 }
 void expresion()
@@ -77,22 +136,4 @@ void expresion()
 
 /*
 
-    int opcion;
-
-    do{
-        switch(opcion = menu){
-            case 1:
-                titulo("Palindromo");
-                break;
-            case 2:
-                titulo("Expresion");
-                break;
-            case 3:
-                titulo("Fin del programa");
-                return 0;
-            default:
-                titulo("No se reconoce la opción, intente de nuevo");
-        }
-        system("pause");
-    }while(opcion != 3);
 */
