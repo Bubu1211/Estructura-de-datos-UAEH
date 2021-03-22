@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 #include <Pila.h>
 #include <Cola.h>
 
@@ -27,6 +28,7 @@ int main()
             case 3:
                 titulo("Expresion");
                 expresion();
+                break;
             case 4:
                 titulo("Fin del programa");
                 return 0;
@@ -123,6 +125,7 @@ void palindromo()
     for(int i = 0; i<pila.getSize(); i++){
         if(pila.pop() != cola.pop()){
             es_palindromo = false;
+            break;
         }
     }
     if(es_palindromo) std::cout<<"La palabra es: "<<palabra<<"\nSi es palíndromo \n";
@@ -131,7 +134,34 @@ void palindromo()
 }
 void expresion()
 {
+    std::string expresion;
+    Pila<double> x;
 
+    std::cout<<"Ingresa la expresión en notación posfija: ";
+    std::cin>>expresion;
+
+    for(int i = 0; i<expresion.length(); i++){
+        if(isdigit(expresion[i])){
+                x.push(expresion[i]-48);
+        }else{
+            double oD = x.pop();
+            double oI = x.pop();
+
+            switch(expresion[i]){
+                case '+':  x.push(oI+oD);
+                    break;
+                case '-':  x.push(oI-oD);
+                    break;
+                case '*':  x.push(oI*oD);
+                    break;
+                case '/':  x.push(oI/oD);
+                    break;
+                case '^':  x.push(pow(oI,oD));
+                    break;
+            }
+        }
+    }
+    std::cout<<"\nResultado: "<<x.top()<<"\n";
 }
 
 /*
