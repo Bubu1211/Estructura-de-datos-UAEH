@@ -24,7 +24,7 @@ template <class T> class Lista
         void bubble_sort();
         void quick_sort(int, int);
         void selection_sort();
-        void merge_sort();
+        void merge_sort(int);
         void insertion_sort();
 
         int tam;
@@ -94,7 +94,7 @@ template <class T> Node<T>* Lista<T>::getLastNode()
 ///retorna el valor y elimina el nodo segun el indice
 template <class T> T Lista<T>::pop(int i)
 {
-    if(i<=tam && i>=1){
+    if(i<=tam && i>=1 && !isEmpty()){
         Node<T> *n = getNodeAt(i);
         Node<T> *t = top;
         T x = n->value;
@@ -111,7 +111,6 @@ template <class T> T Lista<T>::pop(int i)
         tam--;
         return x;
     }
-    return -1;
 }
 
 
@@ -231,15 +230,40 @@ template <class T> void Lista<T>::quick_sort(int inicio, int fin)
 
     int i=inicio, j=fin;
 
-    ///ordeanmiento, recursividad y dowhile
+    while(i<=j){
+        while(getNodeAt(i)->value<pivote) i++;
+        while(getNodeAt(j)->value>pivote) j--;
 
-    std::cout<<"Termina quickSort...\n";
+        if(i<=j){
+            T aux = getNodeAt(i)->value;
+            getNodeAt(i)->value = getNodeAt(j)->value;
+            getNodeAt(j)->value = aux;
+            i++;
+            j--;
+        }
+    }
+    if(j>inicio) quick_sort(inicio, j);
+    if(i<fin) quick_sort(i, fin);
 }
 
 
-template<class T> void Lista<T>::merge_sort()
+template<class T> void Lista<T>::merge_sort(int indiceMedio)
 {
-
+    if(indiceMedio == 1){
+        if(getNodeAt(indiceMedio+1)->value<getNodeAt(indiceMedio)->value){
+            T aux = getNodeAt(indiceMedio+1)->value;
+            getNodeAt(indiceMedio+1)->value = getNodeAt(indiceMedio)->value ;
+            getNodeAt(indiceMedio)->value = aux;
+        }
+    }else if(indiceMedio != 0){
+        merge_sort(indiceMedio/2);
+        int i = 1+indiceMedio+indiceMedio/2;
+        if(getNodeAt(i+1)->value<getNodeAt(i)->value){
+            T aux = getNodeAt(i+1)->value;
+            getNodeAt(i+1)->value = getNodeAt(i)->value ;
+            getNodeAt(i)->value = aux;
+        }
+    }
 }
 
 

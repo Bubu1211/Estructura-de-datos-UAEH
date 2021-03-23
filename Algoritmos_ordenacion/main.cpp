@@ -53,6 +53,8 @@ int main()
                 break;
 
             case 8:
+                titulo("8. Ordenar por merge sort");
+                x.merge_sort(x.getSize()/2);
                 break;
             case 9:
                 titulo("9. Ordenar por Insertion Sort");
