@@ -24,7 +24,7 @@ template <class T> class Lista
         void bubble_sort();
         void quick_sort(int, int);
         void selection_sort();
-        void merge_sort(int);
+        void merge_sort(int, int);
         void insertion_sort();
 
         int tam;
@@ -247,22 +247,17 @@ template <class T> void Lista<T>::quick_sort(int inicio, int fin)
 }
 
 
-template<class T> void Lista<T>::merge_sort(int indiceMedio)
+template<class T> void Lista<T>::merge_sort(int inicio, int fin)
 {
-    if(indiceMedio == 1){
-        if(getNodeAt(indiceMedio+1)->value<getNodeAt(indiceMedio)->value){
-            T aux = getNodeAt(indiceMedio+1)->value;
-            getNodeAt(indiceMedio+1)->value = getNodeAt(indiceMedio)->value ;
-            getNodeAt(indiceMedio)->value = aux;
+    if(inicio+1 == fin){
+        if(getNodeAt(fin)->value<getNodeAt(inicio)->value){
+            T aux = getNodeAt(fin)->value;
+            getNodeAt(fin)->value = getNodeAt(inicio)->value ;
+            getNodeAt(inicio)->value = aux;
         }
-    }else if(indiceMedio != 0){
-        merge_sort(indiceMedio/2);
-        int i = 1+indiceMedio+indiceMedio/2;
-        if(getNodeAt(i+1)->value<getNodeAt(i)->value){
-            T aux = getNodeAt(i+1)->value;
-            getNodeAt(i+1)->value = getNodeAt(i)->value ;
-            getNodeAt(i)->value = aux;
-        }
+    }else{
+        merge_sort(inicio, (inicio+fin)/2);
+        merge_sort(((inicio+fin)/2)+1, fin);
     }
 }
 

@@ -3,6 +3,22 @@
 
 #include <Pila.h>
 
+template <class T>class Node
+{
+    public:
+        T value;
+        Node *next;
+
+        Node(T v) {
+            value = v;
+            next = NULL;
+        }
+
+        ~Node(){
+            delete next;
+        }
+};
+
 template <class T> class Cola
 {
     public:
