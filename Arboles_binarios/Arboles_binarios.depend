@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1616604515 source:c:\users\asus\documents\cpp-code\arboles_binarios\main.cpp
+	<iostream>
+	<Node_a.h>
+	<Cola.h>
+
+1616603295 c:\users\asus\documents\cpp-code\arboles_binarios\include\node.h
+
+1616607197 c:\users\asus\documents\cpp-code\arboles_binarios\include\node_a.h
+	<Cola.h>
+
+1616603695 c:\users\asus\documents\cpp-code\arboles_binarios\include\cola.h
+
