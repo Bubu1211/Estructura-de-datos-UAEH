@@ -182,6 +182,7 @@ template <class T> void Lista<T>::bubble_sort()
                 getNodeAt(j)->value = getNextNode(j)->value;
                 getNextNode(j)->value = aux;
             }
+
         }
     }
 }
@@ -207,7 +208,7 @@ template <class T> void Lista<T>::selection_sort()
 
 template <class T> void Lista<T>::insertion_sort()
 {
-    int i, j, iteraciones;
+    int i, j;
     T aux;
     for(i = 1; i<=tam; i++){
         aux = getNodeAt(i)->value;
@@ -216,11 +217,9 @@ template <class T> void Lista<T>::insertion_sort()
             getNodeAt(j)->value = getPrevNode(j)->value;
             getPrevNode(j)->value = aux;
             j--;
-            iteraciones++;
         }
         getNodeAt(j)->value = aux;
     }
-    std::cout<<"iteraciones: "<<iteraciones;
 }
 
 template <class T> void Lista<T>::quick_sort(int inicio, int fin)
@@ -245,21 +244,5 @@ template <class T> void Lista<T>::quick_sort(int inicio, int fin)
     if(j>inicio) quick_sort(inicio, j);
     if(i<fin) quick_sort(i, fin);
 }
-
-
-template<class T> void Lista<T>::merge_sort(int inicio, int fin)
-{
-    if(inicio+1 == fin){
-        if(getNodeAt(fin)->value<getNodeAt(inicio)->value){
-            T aux = getNodeAt(fin)->value;
-            getNodeAt(fin)->value = getNodeAt(inicio)->value ;
-            getNodeAt(inicio)->value = aux;
-        }
-    }else{
-        merge_sort(inicio, (inicio+fin)/2);
-        merge_sort(((inicio+fin)/2)+1, fin);
-    }
-}
-
 
 #endif // LISTA_H

@@ -53,20 +53,16 @@ int main()
                 break;
 
             case 8:
-                titulo("8. Ordenar por merge sort");
-                x.merge_sort(1, x.getSize());
-                break;
-            case 9:
                 titulo("9. Ordenar por Insertion Sort");
                 x.insertion_sort();
                 break;
 
-            case 10:
+            case 9:
                 titulo("Tamaño lista: ");
-                std::cout<<x.tam;
+                std::cout<<x.tam<<"\n";
                 break;
 
-            case 11:
+            case 10:
                 titulo("Fin del programa");
                 return 0;
                 break;
@@ -91,10 +87,9 @@ int menu()
     std::cout<<"5. Ordenar por Bubble Sort \n";
     std::cout<<"6. Ordenar por quicksort \n";
     std::cout<<"7. Ordenar por Selection Sort \n";
-    std::cout<<"8. Ordenar porMerge Sort \n";
-    std::cout<<"9. Ordenar por Insertion Sort \n";
-    std::cout<<"10. Ver tamaño \n";
-    std::cout<<"11. Salir \n";
+    std::cout<<"8. Ordenar por Insertion Sort \n";
+    std::cout<<"9. Ver tamaño \n";
+    std::cout<<"10. Salir \n";
     std::cin>>r;
     return r;
 }
