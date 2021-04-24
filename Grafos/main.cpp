@@ -17,7 +17,7 @@ void printGraph(std::vector<int> adj[], int V)
     {
         std::cout<<v <<" = ";
         for(auto x : adj[v])
-            std::cout<<"-> "<<x;
+            std::cout<<x<<"-> ";
 
         std::cout<<std::endl;
     }
