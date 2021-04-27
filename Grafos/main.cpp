@@ -22,6 +22,29 @@ void printGraph(std::vector<int> adj[], int V)
         std::cout<<std::endl;
     }
 }
+
+///recorrido por anchura
+void BFS(std::vector<int> adj[], int V, int v)
+{
+    std::queue<int> cola;
+    std::vector<bool> visited(V, false);
+    std::vector<int>::iterator it;
+    visited[v] = true;
+    cola.push(v);
+
+    while(!cola.empty()){
+        int w = cola.front();
+        cola.pop();
+        std::cout <<w<< " ";
+        for (it = adj[w].begin(); it != adj[w].end(); it++){
+            if (!visited[*it]){
+                visited[*it] = true;
+                cola.push(*it);
+            }
+        }
+    }
+}
+
 int main()
 {
     int V = 5;
@@ -34,6 +57,16 @@ int main()
     addEdge(adj, 2, 3);
     addEdge(adj, 3, 4);
     printGraph(adj, V);
+
+     BFS(adj,V,0); std::cout << std::endl;
+
+    BFS(adj,V,1); std::cout << std::endl;
+
+    BFS(adj,V,2); std::cout << std::endl;
+
+    BFS(adj,V,3); std::cout << std::endl;
+
+    BFS(adj,V,4); std::cout << std::endl;
 
     return 0;
 }
