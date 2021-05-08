@@ -8,7 +8,11 @@ void lectura();
 
 int main()
 {
-    lectura();
+    try{
+        lectura();
+    }catch(int error){
+        std::cout<<"Error: "<<error;
+    }
     return 0;
 }
 
@@ -18,10 +22,7 @@ void lectura(){
 
     archivo.open("programacion.txt", std::ios::in);
 
-    if(archivo.fail()){
-       std::cout<<"No se pudo abrir el archivo ";
-        exit(1);
-    }
+    if(archivo.fail()) throw 999;
 
     while(!archivo.eof()){
         getline(archivo, texto);

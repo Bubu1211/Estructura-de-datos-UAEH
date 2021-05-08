@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1620512525 source:c:\users\asus\documents\cpp-code\lectura_archivos\main.cpp
+1620514769 source:c:\users\asus\documents\cpp-code\lectura_archivos\main.cpp
 	<iostream>
 	<fstream>
 	<string.h>
