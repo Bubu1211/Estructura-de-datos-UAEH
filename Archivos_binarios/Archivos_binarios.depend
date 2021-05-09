@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1620524760 source:c:\users\asus\documents\cpp-code\archivos_binarios\main.cpp
+	<iostream>
+	<cstdio>
+
